@@ -1,0 +1,22 @@
+#board {
+    border: solid saddlebrown 6px;
+    height: 600px;
+    width: 600px;
+
+}
+
+
+.square:hover {
+    background-color: lightblue;
+}
+
+.square {
+    background-color: black;
+    width: 12.5%;
+    height: 12.5%;
+    float: right;
+}
+
+.white {
+    background-color: antiquewhite;
+}

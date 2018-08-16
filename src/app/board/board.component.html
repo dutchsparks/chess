@@ -1,0 +1,18 @@
+<div id="board">
+
+  <div *ngFor="let tile of TILES"
+     [ngClass]="'square'"
+     [class.white]="tile.rank % 2 === 0 && tile.id % 2 !== 0 || tile.id % 2 === 0 && tile.rank % 2 !== 0"
+     (click)="clickTile(tile)"
+  >
+
+  <div *ngIf="tile.piece" [style.color]="'red'" > {{tile.piece.type}}  </div>
+</div>
+
+</div>
+
+<p>
+  board works!
+  selected tile:
+  (click)="clickSource($event, tile)"
+</p>
